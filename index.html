@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- 万国码 -->
+		<meta charset="utf-8">
+		<!-- 在ie浏览器下呈现最好的渲染模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 视口 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1，user-scalable-no">
+		<title>自适应网站页面</title>
+		<!-- Bootstrap所需的文件 -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<!-- 网页本身样式 -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<!-- fluid让网页平铺整个屏幕 -->
+		<div class="container-fluid">
+			<div class="row top">
+				<!-- text-center让里面的东西居中 -->
+				<div class="col-lg-12 text-center">
+					<a href="#"><img src="images/2.png" alt="图标"></a>
+				</div>
+			</div>
+		</div>
+		<!-- 导航条部分 -->
+		<!-- navbar:导航栏 -->
+		<nav class="navbar ">
+			<div class="container-fluid">
+				<!-- 导航头 -->
+				<div class="navbar-header text-center">
+					<!--navbar-toggle:导航栏切换
+              collapsed:折叠 
+              data-toggle:数据切换 
+              data-target:数据目标 需要绑定id
+              aria-expanded:数据扩展-->
+					<button type="button" id="leader_hide" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#link1" aria-expanded="false">
+                    <!-- 导航条图标 -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				</div>
+				<!-- collapse:折叠 -->
+				<div class="collapse navbar-collapse" id="link1">
+					<ul class="nav navbar-nav leader_list">
+						<li>
+							<a class="shouye" href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">论坛</a>
+						</li>
+						<li>
+							<a href="#">快捷手册</a>
+						</li>
+						<li>
+							<a href="#">中文文档</a>
+						</li>
+						<li>
+							<a href="#">关于</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- comtent部分 -->
+		<div class="container-fluid" id="content">
+			<div class="container">
+				<div class="row">
+					<!-- 左边文章部分 -->
+					<main class="col-md-8 ">
+						<article>
+							<h1><a href="#">Ghost 0.6.0 版本正式发布</a></h1>
+							<div class="info">
+								<span>作者：<a href="">王赛</a></span>
+								<time>&nbsp;&nbsp;2015年8月13日</time>
+							</div>
+							<br>
+							<div class="arti">
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行</p>
+							</div>
+							<br/>
+							<div class="read">
+								<a class="btn btn-primary">阅读全文</a>
+							</div>
+							<footer>
+								<i class="glyphicon glyphicon-folder-open"></i>&nbsp;&nbsp;
+								<a href="#">Ghost</a>&nbsp;&nbsp;
+								<a href="#">新版本发布</a>&nbsp;&nbsp;
+								<a href="#">Ghost 0.7 版本</a>
+							</footer>
+						</article>
+						<article>
+							<h1><a href="#">Ghost 0.6.0 版本正式发布</a></h1>
+							<div class="info">
+								<span>作者：<a href="">王赛</a></span>
+								<time>&nbsp;&nbsp;2015年8月13日</time>
+							</div>
+							<br>
+							<div class="arti">
+								<img src="images/4.png" alt="图片" class="img-responsive">
+								<br>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行</p>
+							</div>
+							<br/>
+							<div class="read">
+								<a class="btn btn-primary">阅读全文</a>
+							</div>
+							<footer>
+								<i class="glyphicon glyphicon-folder-open"></i>&nbsp;&nbsp;
+								<a href="#">Ghost</a>&nbsp;&nbsp;
+								<a href="#">新版本发布</a>&nbsp;&nbsp;
+								<a href="#">Ghost 0.7 版本</a>
+							</footer>
+						</article>
+						<article>
+							<h1><a href="#">Ghost 0.6.0 版本正式发布</a></h1>
+							<div class="info">
+								<span>作者：<a href="">王赛</a></span>
+								<time>&nbsp;&nbsp;2015年8月13日</time>
+							</div>
+							<br>
+							<div class="arti">
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行</p>
+							</div>
+							<br/>
+							<div class="read">
+								<a class="btn btn-primary">阅读全文</a>
+							</div>
+							<footer>
+								<i class="glyphicon glyphicon-folder-open"></i>&nbsp;&nbsp;
+								<a href="#">Ghost</a>&nbsp;&nbsp;
+								<a href="#">新版本发布</a>&nbsp;&nbsp;
+								<a href="#">Ghost 0.7 版本</a>
+							</footer>
+						</article>
+						<article>
+							<h1><a href="#">Ghost 0.6.0 版本正式发布</a></h1>
+							<div class="info">
+								<span>作者：<a href="">王赛</a></span>
+								<time>&nbsp;&nbsp;2015年8月13日</time>
+							</div>
+							<br>
+							<div class="arti">
+								<img src="images/3.png" alt="图片" class="img-responsive">
+								<br>
+								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行</p>
+							</div>
+							<br/>
+							<div class="read">
+								<a class="btn btn-primary">阅读全文</a>
+							</div>
+							<footer>
+								<i class="glyphicon glyphicon-folder-open"></i>&nbsp;&nbsp;
+								<a href="#">Ghost</a>&nbsp;&nbsp;
+								<a href="#">新版本发布</a>&nbsp;&nbsp;
+								<a href="#">Ghost 0.7 版本</a>
+							</footer>
+						</article>
+						<nav aria-label="Page navigation">
+							<ul class="pagination pagination-md">
+								<li class="disabled">
+									<a href="#" aria-label="Previous" >
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li  class="active">
+									<a href="#" >1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</main>
+
+					<!--右边部分-->
+					<aside class="col-md-4  hidden-xs hidden-sm">
+						<div class="shequ">
+							<h3>社区</h3>
+							<p>QQ群：277327792</p>
+							<p>
+								<a href="#"><i class="glyphicon glyphicon-fire"></i>&nbsp;&nbsp;官方微博</a>
+							</p>
+							<p>
+								<a href="#"><i class="glyphicon glyphicon-edit"></i>&nbsp;&nbsp;问答社区</a>
+							</p>
+						</div>
+						<div class="download">
+							<h3>下载 Ghost</h3>
+							<br/>
+							<p>
+								<a href="#" class="btn btn-default">Ghost 中文版（0.7.4）</a>
+							</p>
+						</div>
+						<!-- 标签云部分 -->
+						<div class="tags">
+							<h3>标签云</h3>
+							<p>
+								<a href="#">jQuery</a>
+								<a href="#">Ghost 0.7 版本</a>
+								<a href="#">开源</a>
+								<a href="#">助手函数</a>
+								<a href="#">标签云</a>
+								<a href="#">导航</a>
+								<a href="#">自定义页面</a>
+								<a href="#">静态页面</a>
+								<a href="#">Roon.io</a>
+								<a href="#">配置文件</a>
+								<a href="#">又拍云存储</a>
+								<a href="#">上传</a>
+								<a href="#">Handlebars</a>
+								<a href="#">邮件</a>
+								<a href="#">快捷键</a>
+								<a href="#">用户指南</a>
+								<a href="#">主题市场</a>
+								<a href="#">新版本发布</a>
+							</p>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 footer_news">
+						<h3>最新文章</h3>
+						<p>
+							<a href="#">Node.js v4 LTS 成为 Ghost 推荐版本</a>
+							<span>2016年7月26日</span>
+						</p>
+						<p>
+							<a href="#">Ghost 桌面版 APP 正式发布</a>
+							<span>2016年4月28日</span>
+						</p>
+						<p>
+							<a href="#">为 Ubuntu 和 Debian 安装最新版本的 Node.js</a>
+							<span>2016年3月23日</span>
+						</p>
+					</div>
+					<div class="col-md-4 footer_tags">
+						<h3>标签云</h3>
+						<p>
+							<a href="#">Ghost</a>
+							<a href="#">新版本发布</a>
+							<a href="#">JavaScript</a>
+							<a href="#">Promise</a>
+							<a href="#">主题</a>
+							<a href="#">Node.js</a>
+							<a href="#">MySQL</a>
+							<a href="#">Nginx</a>
+							<a href="#">阿里云服务器</a>
+							<a href="#">Ubuntu</a>
+							<a href="#">深度玩转 Ghost</a>
+							<a href="#">Theme</a>
+							<a href="#">Markdown</a>
+							<a href="#">反向代理</a>
+							<a href="#">Apache</a>
+							<a href="#">...</a>
+						</p>
+					</div>
+					<div class="col-md-4 footer_com">
+						<h3>合作伙伴</h3>
+						<p>
+							<a href=""> Bootstrap中文网</a>
+							<a href="">开放CDN服务</a>
+							<a href="">Grunt中文网</a>
+						</p>
+						<p>
+							<a href="">Gulp中文网</a>
+							<a href="">Lodash中文文档</a>
+							<a href="">jQuery中文文档</a>
+						</p>
+						<p class="last">
+							<a href="#">阿里云 又拍云</a>
+							<a href="#">UCloud</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="end">
+			<div class="content">
+				<div class="row">
+					<div class="col-sm-12">
+						<span>Copyright&nbsp; ©&nbsp;&nbsp;<a href="#">Ghost中文网</a>&nbsp;|&nbsp; <a href="#">京ICP备11008151号</a> |&nbsp;&nbsp;京公网安备11010802014853</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

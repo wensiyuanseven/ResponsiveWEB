@@ -1,0 +1,377 @@
+//全局变量
+@color: #E67E22;
+//字体样式
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+
+//头部样式
+.top {
+    // center 上下居中 左右占20%
+    background: url(../images/1.jpg) no-repeat center 20%;
+    //cover 让背景图片铺满全屏
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+// 导航样式
+.navbar {
+    border-bottom: 2px solid #e1e1e1;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+#leader_hide {
+    float: none;
+    span {
+        background: #505050;
+        height: 3px;
+    }
+}
+
+.leader_list {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    li {
+        float: none;
+        display: inline-block;
+        margin-bottom: -2px;
+        a {
+            padding-right: 20px;
+            padding-left: 20px;
+            color: #505050;
+            font-size: 18px;
+            font-family: block;
+            line-height: 25px;
+            &:hover {
+                background-color: white;
+                color: @color;
+            }
+        }
+        a.shouye {
+            border-bottom: 2px solid @color;
+        }
+        // 媒体查询
+        @media (max-width:768px) {
+            display: block;
+            text-align: left;
+        }
+    }
+}
+
+// 内容样式
+#content {
+    background: #EBEBEB;
+    padding-top: 35px;
+    padding-bottom: 13px;
+    //内容右边部分
+    main {
+        article {
+            width: 100%;
+            // height: 200px;
+            background: white;
+            padding: 10px 35px;
+            padding-bottom: 10px;
+            margin-bottom: 35px;
+            // 标题
+            h1 {
+                width: 100%;
+                text-align: center;
+                font-weight: normal;
+                a {
+                    color: #303030;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            //作者和时间
+            .info {
+                width: 100%;
+                text-align: center;
+                color: #959595;
+                a {
+                    color: @color;
+                }
+            }
+            //内容文章
+            .arti {
+                width: 100%;
+                p {
+                    color: #444443;
+                    font-size: 18px;
+                }
+            }
+            // 按钮
+            .read {
+                width: 100%;
+                a {
+                    background: @color;
+                    color: white;
+                    border: 1px solid @color;
+                    &:hover {
+                        background: #303030;
+                        border: 1px solid #303030;
+                    }
+                }
+            }
+            // footer部分
+            footer {
+                padding-top: 25px;
+                padding-bottom: 0px;
+                border-top: 1px solid #ebebeb;
+                margin-top: 30px;
+                color: red;
+                a {
+                    color: #959595;
+                    &:hover {
+                        color: @color;
+                    }
+                }
+            }
+        }
+        @media (max-width:992px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    // 内容右边部分
+    aside {
+        //社区块
+        .shequ {
+            width: 100%;
+            // height: 200px;
+            background: white;
+            padding: 20px 30px;
+            h3 {
+                margin-top: 0;
+                border-bottom: 1px solid #EBEBEB;
+                padding-bottom: 7px;
+                //难点
+                //设置绝对定位 为下面的边线做基础
+                position: relative;
+                //加边线 插入到h3之后
+                &:after {
+                    content: "";
+                    width: 90px;
+                    height: 1px;
+                    background: @color;
+                    //设置相对定位
+                    position: absolute;
+                    left: 0px;
+                    bottom: -1px;
+                }
+            }
+            p {
+                a {
+                    color: @color;
+                    i {
+                        color: red;
+                    }
+                }
+            }
+        }
+        //下载块
+        .download {
+            margin-top: 35px;
+            padding: 20px 30px;
+            background: white;
+            width: 100%;
+            h3 {
+                margin-top: 0;
+                border-bottom: 1px solid #EBEBEB;
+                padding-bottom: 7px;
+                //设置绝对定位 为下面的边线做基础
+                position: relative;
+                //加边线 插入到h3之后
+                &:after {
+                    content: "";
+                    width: 90px;
+                    height: 1px;
+                    background: @color;
+                    //设置相对定位
+                    position: absolute;
+                    left: 0px;
+                    bottom: -1px;
+                }
+            }
+            p {
+                a {
+                    width: 100%;
+                    background: @color;
+                    color: white;
+                    border: 1px solid @color;
+                    &:hover {
+                        background: #303030;
+                        border: 1px solid #303030;
+                    }
+                }
+            }
+        }
+        //标签云
+        .tags {
+            background: white;
+            padding: 20px 30px;
+            width: 100%;
+            margin-top: 35px;
+            h3 {
+                margin-top: 0;
+                border-bottom: 1px solid #EBEBEB;
+                padding-bottom: 7px;
+                //设置绝对定位 为下面的边线做基础
+                position: relative;
+                //加边线 插入到h3之后
+                &:after {
+                    content: "";
+                    width: 90px;
+                    height: 1px;
+                    background: @color;
+                    position: absolute;
+                    left: 0px;
+                    bottom: -1px;
+                }
+            }
+            p {
+                width: 100%;
+                //触发bfc
+                overflow: hidden;
+                a {
+                    display: block;
+                    float: left;
+                    margin: 5px 5px 0px 0px;
+                    padding: 5px 10px;
+                    color: #959595;
+                    border: 1px solid #EBEBEB;
+                    font-size: 14px;
+                    border-radius: 2px;
+                    &:hover {
+                        background: @color;
+                        color: white;
+                        border: 1px solid @color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//底部部分
+#footer {
+    background: #1E1E1E;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    .footer_tags,
+    .footer_news,
+    .footer_com {
+        padding-left: 45px;
+        padding-right: 45px;
+        margin-bottom: 30px;
+        h3 {
+            margin-top: 0px;
+            color: white;
+            padding-bottom: 7px;
+            border-bottom: 1px solid #303030;
+            position: relative;
+            margin-bottom: 15px;
+            &:after {
+                content: "";
+                width: 90px;
+                height: 1px;
+                background: @color;
+                position: absolute;
+                left: 0px;
+                bottom: -1px;
+            }
+        }
+        p {
+            a {
+                //强制不换行
+                white-space: nowrap;
+                overflow:hidden;
+            }
+        }
+    }
+    // 最新文章部分
+    .footer_news {
+        p {
+            border-bottom: 1px dashed #303030;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            a {
+                display: block;
+                line-height: 25px;
+                &:hover {
+                    color: @color;
+                    text-decoration: none;
+                }
+            }
+            span {
+                display: block;
+                color: #505050;
+                line-height: 25px
+            }
+        }
+    }
+    //标签云
+    .footer_tags {
+        // width:100%;
+        overflow: hidden;
+        a {
+            display: block;
+            float: left;
+            margin: 5px 5px 0px 0px;
+            padding: 5px 10px;
+            color: #959595;
+            border: 1px solid #303030;
+            font-size: 14px;
+            border-radius: 2px;
+            &:hover {
+                background: @color;
+                border: 1px solid @color;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    //合作伙伴
+    .footer_com {
+        p {
+            border-bottom: 1px dashed #303030;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            a {
+                color: #959595;
+                line-height: 25px;
+                padding: 5px;
+                margin-right: 10px;
+                border-radius: 2px;
+                &:hover {
+                    background: @color;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        p.last {
+            border: none;
+        }
+    }
+}
+
+//end
+#end {
+    background: #0F0F0F;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-top: 1px solid #303030;
+    span {
+        color: #555555;
+        a {
+            color: #555555;
+        }
+    }
+}
