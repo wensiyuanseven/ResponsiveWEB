@@ -5,4 +5,3 @@
 3. less编写css
 4. HTML5中的新标签
 5. CSS3中的样式
-<p>欢迎骚扰 QQ:1783522207&nbsp;&nbsp;&nbsp;邮箱:1783522207@qq.com </p>
